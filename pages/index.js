@@ -31,17 +31,20 @@ export default function Home() {
     <div className="flex flex-col items-center px-2 py-2 justify-center">
       <section className="w-full border bg-base-content/5 border-base-content/10 rounded-md flex items-center gap-4 p-4 max-w-screen-xl">
         <CircleAlert className="h-16 w-16 md:h-6 md:w-6" />
-        <p className="text-xs">
+        {/* <p className="text-xs">
           FIU Rooms has been updated to Fall 2025! Did your class change rooms?
           Email me at{" "}
           <a href="mailto:mail@anthonymham.com" className="underline">
             mail@anthonymham.com
           </a>{" "}
           to submit a room change.
+        </p> */}
+        <p className="text-xs">
+          FIU Rooms will be updated to the Spring 2026 semester by the end of the week. See you soon!
         </p>
       </section>
 
-      <section className="w-full flex max-w-screen-xl py-4 items-center justify-center">
+      {/* <section className="w-full flex max-w-screen-xl py-4 items-center justify-center">
         <label className="input-md flex w-full items-center border border-base-content/10 rounded-md bg-base-content/5">
           <Search size={15} className="text-base-content/60 mr-2" />
           <input
@@ -92,7 +95,7 @@ export default function Home() {
             <span>No buildings found</span>
           </div>
         )}
-      </section>
+      </section> */}
     </div>
   );
 }
