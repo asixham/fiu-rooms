@@ -40,7 +40,7 @@ export default function Home() {
           to submit a room change.
         </p> */}
         <p className="text-xs">
-          FIU Rooms will be updated to the Spring 2026 semester by the end of the week. See you soon!
+          FIU Rooms is going through a major update for Spring 2026. Please check back soon!
         </p>
       </section>
 
