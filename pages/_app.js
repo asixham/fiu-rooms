@@ -34,7 +34,6 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       <div className="flex min-h-screen flex-col">
         <div className="bg-primary flex-grow">
-          <Navbar />
           <Component {...pageProps} />
         </div>
         <Analytics />
