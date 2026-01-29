@@ -8,7 +8,7 @@ export default function Home() {
       <div className="mb-12 inline-block">
         <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600 shadow-sm">
           <Sparkles className="w-4 h-4 text-blue-600" />
-          <span className="text-sm font-medium text-gray-600">We've moved</span>
+          <span className="text-sm font-medium text-gray-600">We&apos;ve moved</span>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* Description */}
         <p className="text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
-          We've completely redesigned the platform to help you discover classrooms and navigate campus with ease.
+          We&apos;ve completely redesigned the platform to help you discover classrooms and navigate campus with ease.
         </p>
 
         {/* CTA Button */}
