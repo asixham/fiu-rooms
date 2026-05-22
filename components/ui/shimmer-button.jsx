@@ -10,12 +10,16 @@ export const ShimmerButton = React.forwardRef((
     background = "rgba(0, 0, 0, 1)",
     className,
     children,
+    href,
     ...props
   },
   ref
 ) => {
+  const Component = href ? "a" : "button";
+
   return (
-    <button
+    <Component
+      href={href}
       style={
         {
           "--spread": "90deg",
@@ -51,7 +55,7 @@ export const ShimmerButton = React.forwardRef((
       {/* Highlight */}
       <div
         className={cn(
-          "absolute inset-0 size-full",
+          "pointer-events-none absolute inset-0 size-full",
           "rounded-2xl px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#ffffff1f]",
           // transition
           "transform-gpu transition-all duration-300 ease-in-out",
@@ -65,7 +69,7 @@ export const ShimmerButton = React.forwardRef((
         className={cn(
           "absolute [inset:var(--cut)] -z-20 [border-radius:var(--radius)] [background:var(--bg)]"
         )} />
-    </button>
+    </Component>
   );
 })
 

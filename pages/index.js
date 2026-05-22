@@ -31,7 +31,9 @@ export default function Home() {
         {/* CTA Button */}
         <div className="pt-4">
           <ShimmerButton
-            onClick={() => window.open('https://www.fiuatlas.com', '_blank')}
+            href="https://www.fiuatlas.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="shadow-2xl"
           >
             <span className="flex items-center gap-2">
@@ -43,8 +45,8 @@ export default function Home() {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-10 right-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 blur-3xl" />
-      <div className="absolute bottom-10 left-10 w-40 h-40 bg-blue-50 rounded-full opacity-20 blur-3xl" />
+      <div className="pointer-events-none absolute top-10 right-10 w-32 h-32 bg-blue-100 rounded-full opacity-20 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-10 left-10 w-40 h-40 bg-blue-50 rounded-full opacity-20 blur-3xl" />
     </div>
   );
 }
